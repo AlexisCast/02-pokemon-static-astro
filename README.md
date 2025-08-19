@@ -44,3 +44,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Branches
 
+- feat 1: create structure, layout, and tailwind
