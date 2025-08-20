@@ -47,3 +47,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - feat 1: create structure, layout, and tailwind
 - feat 2: http request to pokemon api
 - feat 3: components and props
+- feat 4: dynamic pagination, arguments by url
