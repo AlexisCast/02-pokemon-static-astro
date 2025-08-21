@@ -22,6 +22,7 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 	href={`/pokemons/${name}`}
 >
 	<img
+		transition:name={`${name}-image`}
 		class:list={[
 			{
 				"w-100 h-100": isBig,

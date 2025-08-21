@@ -51,3 +51,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - feat 5: dynamic props
 - feat 6: create 151 static pages
 - feat 7: style conditioning
+- feat 8: view transition + name transition
