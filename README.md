@@ -64,3 +64,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 -   feat 14: add NavBar and Favorites page
 -   feat 15: Indicate active route in NavBar & Title component
+-   feat 16: Astro Icon integration + Favorite button Icon
