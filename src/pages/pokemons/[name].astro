@@ -1,5 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
+import { Icon } from "astro-icon/components";
 import type { PokemonListResponse } from "@interfaces/pokemon-list-response";
 
 import MainLayout from "@layouts/MainLayout.astro";
@@ -34,15 +35,22 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 	image={imageUrl}
 >
 	<section class="mt-10 mx-10 flex flex-col justify-center items-center">
-		<div>
-			<!-- <a href="/">Back</a> -->
-			<button
-				onclick="history.back()"
-				class="text-blue-500 cursor-pointer">Back</button
-			>
-			<Title>
-				{name}
-			</Title>
+		<div class="flex flex-row">
+			<div>
+				<!-- <a href="/">Back</a> -->
+				<button
+					onclick="history.back()"
+					class="text-blue-500 cursor-pointer">Back</button
+				>
+				<Title>
+					{name}
+				</Title>
+			</div>
+
+			<button id="btn-favorite" class="ml-4">
+				<Icon name="heart-outline" size={50} />
+				<Icon class="hidden" name="heart-full" size={50} />
+			</button>
 		</div>
 
 		<PokemonCard name={name} url={url} isBig={true} />
@@ -60,5 +68,9 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 
 	a {
 		@apply hover:underline text-blue-500;
+	}
+
+	#btn-favorite {
+		@apply hover:animate-pulse;
 	}
 </style>
