@@ -63,3 +63,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 #### Section 4 - Add Dynamism to Our Static Site
 
 -   feat 14: add NavBar and Favorites page
+-   feat 15: Indicate active route in NavBar & Title component
