@@ -6,6 +6,7 @@ import type { PokemonListResponse } from "@interfaces/pokemon-list-response";
 import MainLayout from "@layouts/MainLayout.astro";
 import PokemonCard from "@components/pokemons/PokemonCard.astro";
 import Title from "@components/pokemons/shared/Title.astro";
+import { nan } from "astro:schema";
 
 export const getStaticPaths = (async () => {
 	const resp = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
@@ -47,7 +48,12 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 				</Title>
 			</div>
 
-			<button id="btn-favorite" class="ml-4">
+			<button
+				id="btn-favorite"
+				class="ml-4"
+				data-name={name}
+				data-id={id}
+			>
 				<Icon name="heart-outline" size={50} />
 				<Icon class="hidden" name="heart-full" size={50} />
 			</button>
@@ -62,6 +68,33 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 	</section>
 	<hr />
 </MainLayout>
+
+<script>
+	// This script runs in the browser
+	interface FavoritePokemon {
+		id: string;
+		name: string;
+	}
+
+	document.addEventListener("astro:page-load", () => {
+		console.log("🚀 ~ page loaded");
+
+		const btnFavorite = document.querySelector(
+			"#btn-favorite"
+		) as HTMLButtonElement | null;
+
+		if (!btnFavorite) return;
+
+		if (btnFavorite) {
+			const name = btnFavorite.dataset.name;
+			const id = btnFavorite.dataset.id;
+
+			btnFavorite.addEventListener("click", () => {
+				console.log("🚀 ~ btnFavorite click:", name, id);
+			});
+		}
+	});
+</script>
 
 <style>
 	@reference "tailwindcss";
