@@ -53,3 +53,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - feat 7: style conditioning
 - feat 8: view transition + name transition
 - feat 9: static pagination
+- feat 10: pagination controller
