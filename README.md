@@ -44,16 +44,22 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Branches
 
-- feat 1: create structure, layout, and tailwind
-- feat 2: http request to pokemon api
-- feat 3: components and props
-- feat 4: dynamic pagination, arguments by url
-- feat 5: dynamic props
-- feat 6: create 151 static pages
-- feat 7: style conditioning
-- feat 8: view transition + name transition
-- feat 9: static pagination
-- feat 10: pagination controller
-- feat 11: page by ID
-- feat 12: TypeScript - Path Alias
-- feat 13: Metadata - Images and Description
+#### Section 3 - Dynamic Routes and Static Pagination
+
+-   feat 1: create structure, layout, and tailwind
+-   feat 2: http request to pokemon api
+-   feat 3: components and props
+-   feat 4: dynamic pagination, arguments by url
+-   feat 5: dynamic props
+-   feat 6: create 151 static pages
+-   feat 7: style conditioning
+-   feat 8: view transition + name transition
+-   feat 9: static pagination
+-   feat 10: pagination controller
+-   feat 11: page by ID
+-   feat 12: TypeScript - Path Alias
+-   feat 13: Metadata - Images and Description
+
+#### Section 4 - Add Dynamism to Our Static Site
+
+-   feat 14: add NavBar and Favorites page
