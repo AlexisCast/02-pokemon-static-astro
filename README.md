@@ -56,3 +56,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - feat 10: pagination controller
 - feat 11: page by ID
 - feat 12: TypeScript - Path Alias
+- feat 13: Metadata - Images and Description
