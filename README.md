@@ -67,3 +67,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 -   feat 16: Astro Icon integration + Favorite button Icon
 -   feat 17: client side scripting
 -   feat 18: View Transition life cycle
+-   feat 19: local storage
