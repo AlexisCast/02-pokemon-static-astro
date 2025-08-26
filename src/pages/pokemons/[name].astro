@@ -114,6 +114,9 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 		if (btnFavorite) {
 			const name = btnFavorite.dataset.name ?? "";
 			const id = btnFavorite.dataset.id ?? "";
+			const isFavorite = favoritePokemons.some(
+				(fav) => fav.name === name
+			);
 
 			const heartOutline = btnFavorite.querySelector(
 				"[data-outline]"
@@ -122,6 +125,12 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 			const heartFull = btnFavorite.querySelector(
 				"[data-full]"
 			) as HTMLElement;
+
+			// Check if the current pokemon is in favorites
+			if (isFavorite) {
+				heartOutline.classList.add("hidden");
+				heartFull.classList.remove("hidden");
+			}
 
 			const toggleFavorite = () => {
 				const isFavorite = favoritePokemons.some(
