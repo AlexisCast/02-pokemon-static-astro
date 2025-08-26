@@ -76,8 +76,28 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 		name: string;
 	}
 
-	document.addEventListener("astro:page-load", () => {
-		console.log("🚀 ~ page loaded");
+	// document.addEventListener("astro:before-preparation", () => {
+	// 	console.log("🚀 ~ astro:", "astro:before-preparation");
+	// });
+
+	// document.addEventListener("astro:after-preparation", () => {
+	// 	console.log("🚀 ~ astro:", "astro:after-preparation");
+	// });
+
+	// document.addEventListener("astro:before-swap", () => {
+	// 	console.log("🚀 ~ astro:", "astro:before-swap");
+	// });
+
+	// document.addEventListener("astro:after-swap", () => {
+	// 	console.log("🚀 ~ astro:", "astro:after-swap");
+	// });
+
+	// document.addEventListener("astro:page-load", (dd) => {
+	// 	console.log("🚀 ~ astro:", "astro:page-load");
+	// });
+
+	const handlePageLoad = () => {
+		console.log("🚀 ~ astro loaded");
 
 		const btnFavorite = document.querySelector(
 			"#btn-favorite"
@@ -93,7 +113,9 @@ const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 				console.log("🚀 ~ btnFavorite click:", name, id);
 			});
 		}
-	});
+	};
+
+	document.addEventListener("astro:page-load", handlePageLoad);
 </script>
 
 <style>
