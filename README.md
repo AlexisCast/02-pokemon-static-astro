@@ -47,6 +47,8 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 #### Section 3 - Dynamic Routes and Static Pagination
 
 -   feat 1: create structure, layout, and tailwind
+    -   [Tailwind CSS](https://tailwindcss.com/)
+    -   [Tailwind w/Astro](https://docs.astro.build/en/guides/styling/#tailwind)
 -   feat 2: http request to pokemon api
 -   feat 3: components and props
 -   feat 4: dynamic pagination, arguments by url
@@ -54,7 +56,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 -   feat 6: create 151 static pages
 -   feat 7: style conditioning
 -   feat 8: view transition + name transition
+    -   [Naming a transition](https://docs.astro.build/en/guides/view-transitions/#naming-a-transition)
 -   feat 9: static pagination
+    -   [paginate()](https://docs.astro.build/en/reference/routing-reference/#paginate)
 -   feat 10: pagination controller
 -   feat 11: page by ID
 -   feat 12: TypeScript - Path Alias
@@ -63,13 +67,22 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 #### Section 4 - Add Dynamism to Our Static Site
 
 -   feat 14: add NavBar and Favorites page
+    -   [NavBar component](https://www.creative-tim.com/twcomponents/component/simple-navbar-3)
 -   feat 15: Indicate active route in NavBar & Title component
 -   feat 16: Astro Icon integration + Favorite button Icon
+    -   [Astro Icon](https://www.astroicon.dev/)
+    -   [Iconify](https://iconify.design/getting-started/)
 -   feat 17: client side scripting
 -   feat 18: View Transition life cycle
+    -   [Lifecycle events](https://docs.astro.build/en/guides/view-transitions/#lifecycle-events)
 -   feat 19: local storage
 -   feat 20: indicate if pokemon exist in local storage
 -   fix 21: reorder files and folders
 -   feat 22: Astro Islands with SolidJS
+    -   [Add Integrations](https://docs.astro.build/en/guides/integrations-guide/)
+    -   [SolidJS](https://www.solidjs.com/)
 -   feat 23: Template Directives
     -   [Template Directives](https://docs.astro.build/en/reference/directives-reference/#client-directives)
+-   feat 24: props and components to islands
+    -   [transition:persist-props](https://docs.astro.build/en/guides/view-transitions/#transitionpersist-props)
+    -   [Maintaining State](https://docs.astro.build/en/guides/view-transitions/#maintaining-state)
