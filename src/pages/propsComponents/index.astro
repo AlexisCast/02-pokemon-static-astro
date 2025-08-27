@@ -3,11 +3,11 @@ import Title from "@components/shared/Title.astro";
 import MainLayout from "@layouts/MainLayout.astro";
 
 import { Counter } from "@components/Counter";
-const counterValue = 20;
 ---
 
-<MainLayout title="Islands">
-	<Title>Islands</Title>
+<MainLayout title="Props & Components to Islands">
+	<Title>Props & Components to Islands</Title>
+	<p>Switch between 'Islands' and this page...</p>
 
 	<video controls autoplay transition:name="media-player" transition:persist>
 		<source
@@ -16,23 +16,12 @@ const counterValue = 20;
 		/>
 	</video>
 
-	<div
-		style={{
-			height: "2000px",
-			background: "red",
-			opacity: "0.5",
-		}}
-	>
-	</div>
-
-	<!-- <Counter client:load /> -->
-	<!-- <Counter client:only="solid-js" /> -->
 	<Counter
 		transition:persist="counter"
 		transition:persist-props
 		client:visible
-		initValue={counterValue}
+		initValue={15}
 	>
-		<Title>Counter</Title>
+		<Title> Counter </Title>
 	</Counter>
 </MainLayout>
