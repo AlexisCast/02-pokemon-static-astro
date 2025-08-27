@@ -69,3 +69,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 -   feat 18: View Transition life cycle
 -   feat 19: local storage
 -   feat 20: indicate if pokemon exist in local storage
+-   fix 21: reorder files and folders
