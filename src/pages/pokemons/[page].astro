@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import type { PokemonListResponse } from "@interfaces/pokemon-list-response";
 // Server side code - moment of construction BUILD TIME
 import PokemonCard from "@components/pokemons/PokemonCard.astro";
-import Title from "@components/pokemons/shared/Title.astro";
+import Title from "@components/shared/Title.astro";
 import MainLayout from "@layouts/MainLayout.astro";
 
 export const getStaticPaths = (async ({ paginate }) => {
