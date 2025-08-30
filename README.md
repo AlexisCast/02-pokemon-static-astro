@@ -86,3 +86,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 -   feat 24: props and components to islands
     -   [transition:persist-props](https://docs.astro.build/en/guides/view-transitions/#transitionpersist-props)
     -   [Maintaining State](https://docs.astro.build/en/guides/view-transitions/#maintaining-state)
+-   feat 25: favorite list with SolidJS
