@@ -88,3 +88,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
     -   [Maintaining State](https://docs.astro.build/en/guides/view-transitions/#maintaining-state)
 -   feat 25: favorite list with SolidJS
 -   feat 26: show and remove favorite pokemons
+-   feat 27: view transition from island
